@@ -35,9 +35,13 @@ Here, a user-defined cutoff score is used, which was set to 0.75 within the scri
 This script needs as input:
 	
 SNP profiles generated in the previous steps
+
 index_phasing_list.txt: file containing the phasing introduced for each primer (phasing is needed on the MiniSeq platform for sequencing low-complexity samples, due to the Illumina 2-channel technology). The position of SNPs will be shifted depending in the phasing (0 to +3)
+
 Fw primer length (here 41); RV primer length (here 44) 
+
 Length of amplicon 199 
+
 Extension for output files (here: strain_assignment.results)
 	
 	bash Count_reads_SNPsites.sh
