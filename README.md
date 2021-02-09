@@ -48,13 +48,13 @@ A file name needs to be given. Two files are being produced:
 1. number of reads assigned to each strain in each sample
 2. % of reads with correct length and % binned reads
 
-   perl summarize_strain_counts.pl FILENAME
+		perl summarize_strain_counts.pl FILENAME
 
 Once the number of reads are obtained, the proportions of each strain per sample are calculated using R:
 
-  data[, -1] <- lapply( data[ , -1], function(x) x/sum(x, na.rm=TRUE) )
-  library(reshape)
-  prop <- melt(data, id.vars = "Strain")
+	data[, -1] <- lapply( data[ , -1], function(x) x/sum(x, na.rm=TRUE) )
+	library(reshape)
+	prop <- melt(data, id.vars = "Strain")
 
 and then normalised by the total number of CFUs. The limit of detection (LOD) is calculated by dividing the total number of reads by the total number of CFUs for each sample. 
 
