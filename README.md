@@ -33,6 +33,8 @@ Min/max amplicon size and overlap should be changed if the script is run on an a
 Here, a user-defined cutoff score is used, which was set to 0.75 within the script in our case (75% of the SNPs need to be present in a read)
 
 This script needs as input:
+
+This perl script = count_reads_SNPs_ampliseq.pl
 	
 SNP profiles generated in the previous steps
 
