@@ -64,3 +64,4 @@ Once the number of reads are obtained, the proportions of each strain per sample
 
 and then normalised by the total number of CFUs. The limit of detection (LOD) is calculated by dividing the total number of reads by the total number of CFUs for each sample. 
 
+Community stability metrics analysis is done using the R script: comm_stab_metrics.R
